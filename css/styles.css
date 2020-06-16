@@ -1,6 +1,7 @@
-
 /*Header*/
 
+
+    /*Estilo del header*/
 header *{
     color: white;
     position: relative;
@@ -16,8 +17,6 @@ header *{
     position: relative;
 }
 
-
-
 .inicio:before {
 	content:'';
 	position: absolute;
@@ -26,4 +25,23 @@ header *{
 	left: 0;
 	right: 0;
 	background-color: rgba(0,0,0,0.6);
+}
+
+
+    /*Posicion del header*/
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    padding-top: 30px;
+}
+
+nav a {
+    padding: 10px;
 }
