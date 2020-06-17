@@ -1,16 +1,40 @@
 /*General*/
-body{
-    font-family: 'Noto Sans HK', sans-serif;
+html {
+    font-size: 62.5%;
 }
+
+body {
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 1.6rem;
+}
+
+/*Botones*/
+.boton1 {
+    color: white;
+    border-radius: 10rem;
+    height: 5rem;
+    width: 15rem;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    transition: all 0.8s;
+    margin: 1rem;
+}
+
+.boton1:hover {
+    color: black;
+    background-color: white;
+}
+
 /*Header*/
 
-header *{
+header * {
     color: white;
     position: relative;
     text-decoration: none;
 }
 
-.inicio{
+.inicio {
     background-image: url(../images/header.jpg);
     height: 90vh;
     background-position: center center;
@@ -20,37 +44,63 @@ header *{
 }
 
 .inicio:before {
-	content:'';
-	position: absolute;
+    content: '';
+    position: absolute;
     top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.6);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-.barra > h1{
+.barra>h1 {
     font-family: 'Noto Sans HK', sans-serif;
     font-weight: 100;
 }
 
-.barra span{
+.barra span {
     font-weight: 900;
-} 
+}
 
-.contenedor{
-    max-width: 1200px;
+.contenedor {
+    max-width: 120rem;
     margin: 0 auto 0 auto;
 }
-.barra{
+
+.barra {
     display: flex;
     justify-content: space-around;
 }
 
-nav{
-    padding-top: 35px;
+nav {
+    padding-top: 3.5rem;
 }
 
 nav a {
-    padding: 30px;
+    padding: 3rem;
+}
+
+/*Portada*/
+.portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40rem;
+    align-items: center;
+}
+
+/*Contenido*/
+.contenido1{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    
+}
+
+.contenido1 h1{
+    padding-bottom: 1rem;
+}
+.contenido1 h2{
+text-align: center;
+border-bottom: 0.1rem solid black;
 }
