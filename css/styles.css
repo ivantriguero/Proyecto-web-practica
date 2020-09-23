@@ -13,6 +13,13 @@ img{
     max-width: 100%;
 }
 
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: none;
+}
 /*Utilidades*/
 .content{
     max-width: 100%;
@@ -20,6 +27,69 @@ img{
     padding: 1rem;
 }
 
+
+.centrar-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.header1{
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.header1::after{
+    content: '';
+    background-color: #0a7779;
+    height: .5rem;
+    width: 20rem;
+    display: block;
+    margin: 1rem auto;
+}
+
+
+.cardcontent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.card1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom:5rem
+}
+.card1 img{
+    max-width: 25%;
+}
+.card1 h2,.card1 div{
+    text-align: center;
+}
+.card1 button{
+    color: white;
+    border-radius: 10rem;
+    height: 5rem;
+    width: 15rem;
+    border: 2px solid white;
+    background-color: #0a7779;
+    padding: 1rem;
+    transition: all 0.8s;
+    margin: 1rem;
+}
+.card1 button:hover{
+    border: 2px solid #0a7779;
+    color: #0a7779;
+    background-color: white;
+}
+.card1 *{
+    padding-bottom: 1rem;
+    padding-top:1rem
+}
 
 /*Botones*/
 .boton1 {
@@ -39,11 +109,11 @@ img{
     background-color: white;
 }
 
-.botons{
+.boton2{
     background-color: #0a7779;
 }
 
-.botons:hover{
+.boton2:hover{
     border: 2px solid #0a7779;
     color: #0a7779;
 }
@@ -100,11 +170,17 @@ header * {
 }
 
 nav {
-    padding-top: 3.5rem;
+    display: flex;
 }
 
 nav a {
     padding: 3rem;
+}
+
+nav a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+
 }
 
 /*Portada*/
@@ -116,53 +192,6 @@ nav a {
     align-items: center;
 }
 
-/*Contenido Nuestros cursos*/
-.contenidoclases{
-    display: flex;
-    justify-content: center;
-    
-}
-
-.contenido1 h1{
-    padding-bottom: 1rem;
-    text-align: center;
-}
-.contenido1 h1::after{
-    content: '';
-    background-color: #0a7779;
-    height: .5rem;
-    width: 20rem;
-    display: block;
-    margin: 1rem auto;
-}
-.contenido1{
-    margin: 3rem;
-}
-
-.contenidoclases h2{
-text-align: center;
-}
-
-.contenidoclases > div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.contenidoclases > div > div{
-text-align: center;
-}
-
-.iconoclases{
-    height: 10rem;
-    width: 10rem;
-    margin-bottom: 5rem;
-}
-
-
-/*Contenido 2*/
-
 
 /*Contacto*/
 
@@ -171,7 +200,6 @@ text-align: center;
     position: relative;
 }
 .contacto{
-    height: 30vh;
     background-image: url(/images/contacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -191,6 +219,8 @@ text-align: center;
 .contact-content{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 3rem;
+    padding-top:3rem ;
 }
 .contact-content button{
     flex-basis: calc(20%-100rem);
